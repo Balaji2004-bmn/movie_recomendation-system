@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    background-image: url('your-background-image.jpg'); /* Set your background image */
+    background-size: cover; /* Makes sure the image covers the full page */
+    background-position: center center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Login Page */
+.login-container, .main-app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for the form */
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.login-form input[type="text"], .login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5c67f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.main-app {
+    display: none; 
+    flex-direction: column;
+    padding: 20px;
+    align-items: center; /* Centers the content in the middle */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#logoutButton {
+    padding: 10px;
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    background-color: #5c67f2;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #4348c8;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center; /* Centers the movie items */
+    max-width: 1200px; /* Sets a max-width for the movie display */
+    margin-top: 20px;
+}
+
+.movie-card {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.movie-card h3 {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}

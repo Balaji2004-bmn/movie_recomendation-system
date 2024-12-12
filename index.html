@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Login Page -->
+    <div class="login-container" id="loginContainer">
+        <form class="login-form" id="loginForm">
+            <h2>Login</h2>
+            <div class="error-message" id="errorMessage"></div>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Main App -->
+    <div class="main-app" id="mainApp">
+        <header>
+            <h1>Welcome to Movie Recommendations 🎥</h1>
+            <button id="logoutButton">Logout</button>
+        </header>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for a movie...">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <h2>Recommended Movies</h2>
+        <div id="movieContainer" class="movie-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
